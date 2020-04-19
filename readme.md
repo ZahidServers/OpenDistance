@@ -18,6 +18,6 @@ It has inbuilt help/faq system which helps you to provide a better interface to 
 ## Licence And Copyright
 OpenDistance is created and owned by Mohammed Zahid Wadiwale.
 This is a Freeware your not supposed to modify or resell the code.
-This Software is protect under Article 246 (Indian IT Act) of Indian Constitution.
+This Software is protect under Information Technology Act of Indian Constitution.
 Any Modifications to backend or reselling this WebApp without my consent would be Considered By me as attempt to steal my work for which i may sue in Court of Law.
 © Mohammed Zahid Wadiwale
