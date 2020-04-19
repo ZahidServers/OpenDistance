@@ -196,8 +196,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<h2>Courses</h2>
                     
 					<p></p><p><em>Learn something new</em></p>
-<p>Every course on our site is taught by top instructors from world-class universities and companies
-, so you can learn something new anytime, anywhere. Hundreds of <strong>free courses</strong>
+<p>Every course on our site is taught by top instructors , so you can learn something new anytime, anywhere. Hundreds of <strong>free courses</strong>
  give you access to on-demand video lectures, homework exercises, and community discussion forums
  . Paid courses provide additional quizzes and projects as well as a shareable Course Certificate upon completion.</p>
 <p></p>
