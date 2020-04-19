@@ -5,7 +5,7 @@ $zahid=fread($myfile,filesize("../installation/installation.txt"));
 fclose($myfile);
 if($zahid=='0')
 {
-	echo"<script>window.location.href='installed.php';</script>";
+	echo"<script>window.location.href='../installed';</script>";
 }
 ?>
 <!DOCTYPE html>
