@@ -304,10 +304,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<p></p><p><?php include '../sitetitle.php';?> was founded in <?php include '../siteyear.txt';?> by <?php include '../companyname.txt';?> 
 						with a vision to provide anyone,
 						anywhere with access to the world’s best education. 
-						Professors Daphne Koller and Andrew Ng put their courses online for anyone to take— and taught more learners in a few months 
+						Professors put their courses online for anyone to take— and taught more learners in a few months 
 						than they could over an entire lifetime in the classroom. Today, <?php include '../sitetitle.php';?> has expanded to reach more than 40 million people 
-						and 1,900 businesses around the world. On <?php include '../sitetitle.php';?> you can find online courses, Specializations, certificates and degrees from 190+ 
-						world-class universities and companies, including: Yale, University of Pennsylvania, Google, IBM, and more.</p>
+						and 1,900 businesses around the world. On <?php include '../sitetitle.php';?> you can find online courses, Specializations, certificates and degrees here.</p>
 <p></p>
 					</div>
 				</div>
