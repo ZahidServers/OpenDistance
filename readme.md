@@ -24,3 +24,4 @@ Any Modifications to backend or reselling this WebApp without my consent would b
 ---
 ##Fixing The Bugs/Vulnerabilities
 If You Find Any Bugs/Vulnerabilities please contact me using issues
+---
