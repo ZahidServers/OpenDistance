@@ -359,7 +359,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		        	</div>
 		        </div>
 		    		<p class="cta">
-			<a class="button" href="../course">Explore Our Courses</a>
+			<a class="button" onclick='window.top.location.href="../course"'>Explore Our Courses</a>
 		</p>
 	</div>
 	<!-- /By the Numbers -->
