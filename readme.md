@@ -21,7 +21,6 @@ This is a Freeware your not supposed to modify or resell the code.
 This Software is protect under Information Technology Act of Indian Constitution.
 Any Modifications to backend or reselling this WebApp without my consent would be Considered By me as attempt to steal my work for which i may sue in Court of Law.
 © Mohammed Zahid Wadiwale
----
-##Fixing The Bugs/Vulnerabilities
+## Fixing The Bugs/Vulnerabilities
 If You Find Any Bugs/Vulnerabilities please contact me using issues
 ---
