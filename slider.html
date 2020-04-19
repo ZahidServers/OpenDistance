@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--This page is coded by Mohammed Zahid Wadiwale and is intellectual property of Zahid Servers-->
+<style>
+img {
+  max-width: 100%;
+  vertical-align: middle;
+    z-index: -1;
+
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto 2rem;
+    z-index: -1;
+
+}
+
+.trigger {
+  display: none;
+}
+
+.slider, .slider-wrapper {
+  position: relative;
+  height: 250px;
+    z-index: 0;
+
+}
+
+.slide {
+  background-color: black;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.slide-img {
+  filter: brightness(50%);
+  height: 100%;
+  object-fit: fill;
+  display: block;
+  margin: 0 auto;
+}
+
+.slide-figure {
+  height: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.slide-caption {
+  position: absolute;
+  top: 70%;
+  width: calc(100% - 1rem);
+  transform: translateY(-70%);
+  color: white;
+}
+.slide-caption:not(.slide-caption--left):not(.slide-caption--right) {
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+
+.slide-caption--taped p {
+  display: inline;
+  padding: .25rem .5rem;
+  line-height: 1.75;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slide-caption--left {
+  left: 1rem;
+}
+
+.slide-caption--right {
+  right: 1rem;
+  text-align: right;
+}
+
+.trigger:checked + .slide {
+  z-index: 6000;
+  opacity: 1;
+}
+
+.slider-nav {
+  position: absolute;
+  z-index: 7000;
+  width: 100%;
+  text-align: center;
+  bottom: 1rem;
+}
+
+.slider-nav--left {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.slider-nav--right {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.slider-nav--offcanvas {
+  position: static;
+  margin: 1rem 0;
+}
+
+.slider-nav__item {
+  display: inline-block;
+}
+
+.slider-nav__label {
+  font-size: 13px;
+  background-color: #333;
+  display: block;
+  height: 2em;
+  line-height: 2em;
+  width: 2em;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  transition: background-color .25s, color .25s ease-in-out;
+}
+.slider-nav__label:hover, .slider-nav__label:active, .slider-nav__label:focus {
+  background-color: gray;
+  color: black;
+}
+
+.slider-nav__label--invert {
+  background-color: white;
+  color: black;
+}
+.slider-nav__label--invert:hover, .slider-nav__label--invert:active, .slider-nav__label--invert:focus {
+  background-color: black;
+  color: white;
+}
+
+.slider-nav__label--dot {
+  height: .75rem;
+  width: .75rem;
+  text-indent: -99999px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1024px) {
+  .slider, .slider-wrapper {
+    height: 480px;
+  }
+
+  .slide-caption {
+    width: 65%;
+    font-size: 1.5rem;
+  }
+  .slide-caption p {
+    padding: .5rem .75rem;
+    line-height: 2.25;
+  }
+
+  .slide-caption--left {
+    left: 2rem;
+  }
+
+  .slider-nav--left {
+    padding-left: 2rem;
+  }
+
+  .slide-caption--right {
+    right: 2rem;
+  }
+
+  .slider-nav--right {
+    padding-right: 2rem;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .slider, .slider-wrapper {
+    height: 360px;
+  }
+
+  .slide-caption {
+    width: 75%;
+    font-size: 1.25rem;
+  }
+
+  .slide-caption p {
+    line-height: 2;
+    padding: .35rem .65rem;
+  }
+
+  .slide-caption--left {
+    left: 1.5rem;
+  }
+
+  .slider-nav--left {
+    padding-left: 1.5rem;
+  }
+
+  .slide-caption--right {
+    right: 1.5rem;
+  }
+
+  .slider-nav--right {
+    padding-right: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .slide-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+</style>          <link rel="preload" href="./slider_files/f(2).txt" as="script"><script type="text/javascript" src="./slider_files/f(2).txt"></script><link rel="preload" href="./slider_files/f(3).txt" as="script"><script type="text/javascript" src="./slider_files/f(3).txt"></script><script type="text/javascript" id="_bsap_js_48345e67ddcc36849ca0364b24b36d10" src="./slider_files/s_48345e67ddcc36849ca0364b24b36d10.js.download" async="async"></script><script type="text/javascript" src="./slider_files/pro.js.download" id="_bsap_premium_pro"></script><script type="text/javascript" id="_bsaPRO_js" src="./slider_files/saved_resource" async="async"></script><link rel="preload" href="./slider_files/f(4).txt" as="script"><script type="text/javascript" src="./slider_files/f(4).txt"></script><link rel="preload" href="./slider_files/f(5).txt" as="script"><script type="text/javascript" src="./slider_files/f(5).txt"></script></head>
+<div class="container" style="height: auto !important;">
+
+	<div class="wrapper" style="height: auto !important;">
+	  <script id="_gads" async="" src="./slider_files/f(6).txt" onerror="NOAB.error(this)" onload="NOAB.success(this)"></script>
+<div class="slider-wrapper">
+  <div class="slider">
+    <input type="radio" name="slider" class="trigger" id="one" checked="checked">
+    <div class="slide">
+      <figure class="slide-figure">
+        <img class="slide-img" src="./slider_files/21-1024x768.jpg">
+        <figcaption class="slide-caption slide-caption--taped"><p>100,000 online courses<br>Explore a variety of fresh topics</p></figcaption>
+      </figure>
+    </div>
+    <input type="radio" name="slider" class="trigger" id="two">
+    <div class="slide">
+      <figure class="slide-figure">
+        <img class="slide-img" src="./slider_files/101-1024x768.jpg">
+        <figcaption class="slide-caption slide-caption--taped"><p>Expert instruction<br>Find the right instructor for you</p></figcaption>
+      </figure>
+    </div>
+    <input type="radio" name="slider" class="trigger" id="three">
+    <div class="slide">
+      <figure class="slide-figure">
+        <img class="slide-img" src="./slider_files/41-1024x768.jpg">
+        <figcaption class="slide-caption slide-caption--taped"><p>Lifetime access<br>Learn on your schedule</p></figcaption>
+      </figure>
+    </div>
+  </div>
+  <ul class="slider-nav">
+    <li class="slider-nav__item"><label class="slider-nav__label slider-nav__label--dot slider-nav__label--invert" for="one">1</label></li>
+    <li class="slider-nav__item"><label class="slider-nav__label slider-nav__label--dot slider-nav__label--invert" for="two">2</label></li>
+    <li class="slider-nav__item"><label class="slider-nav__label slider-nav__label--dot slider-nav__label--invert" for="three">3</label></li>
+  </ul>
+</div>
+</div>

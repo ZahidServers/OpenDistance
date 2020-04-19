@@ -1,0 +1,8 @@
+<script type="text/javascript" src="navbar/navcss.js"></script>
+<?php include 'menu.php' ?>
+<div class="content">
+<div name="home">
+<?php include 'banner.php' ?>
+</div>
+<?php include 'banner.php' ?>
+</div>

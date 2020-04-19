@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+</IfModule>
+<Files ~ "\.txt$">  
+Order Allow,Deny
+Deny from All
+</Files>
+Options -Indexes
+ErrorDocument 404 /404.php
+ErrorDocument 403 /503.php
