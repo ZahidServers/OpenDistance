@@ -1,4 +1,13 @@
 <!--This page is coded by Mohammed Zahid Wadiwale and is intellectual property of Zahid Servers-->
+<?php
+$myfile = fopen("../installation/installation.txt", "r") or die("Unable to open file!");
+$zahid=fread($myfile,filesize("../installation/installation.txt"));
+fclose($myfile);
+if($zahid=='0')
+{
+	echo"<script>window.location.href='installation';</script>";
+}
+?>
 <html oncontextmenu='return showcontextmenu(event);' >
 <link rel='icon' type='image/png' href='../favicon.png' />
 <link rel='icon' href='../favicon2.ico' type='image/x-icon'>
