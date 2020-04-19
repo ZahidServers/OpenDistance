@@ -134,7 +134,7 @@ body {
   <a href='../'>Home</a>
   <a href='../course/my'>$mycourse</a>
   <a href='../course'>$course</a>
-  <a href='../mypurchases'>Purchases</a>
+  <a href='../course/mypurchases'>Purchases</a>
   <a href='../subscription/'>Subscription</a>
   <a href='../login/logout.php'>LogOut</a>
 </div>";
