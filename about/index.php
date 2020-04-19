@@ -40,16 +40,7 @@ if($zahid=='0')
  <?php
  if(isset($_SESSION["logined"])){
   $a=$_SESSION["logined"];
-  
-  if($a == "a")
-  {
     echo "<a href='../login/logout.php'>LogOut</a><br>";
-  
-  }
-  else
-  {
-    echo "<a href='../login/'>LogIn</a><br>";
-  }
   }
   else{
 	echo "<a href='../login/'>LogIn</a><br>";
