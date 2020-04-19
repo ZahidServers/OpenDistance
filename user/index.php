@@ -4,8 +4,8 @@ $myfile = fopen("../installation/installation.txt", "r") or die("Unable to open 
 $zahid=fread($myfile,filesize("../installation/installation.txt"));
 fclose($myfile);
 if($zahid=='0')
-{
-	echo"<script>window.location.href='installation';</script>";
+{	
+ echo"<script>window.location.href='../installation';</script>";
 }
 ?>
 <html oncontextmenu='return showcontextmenu(event);' >
