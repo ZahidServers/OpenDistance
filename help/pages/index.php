@@ -59,7 +59,7 @@ else
 html, body, iframe, embed { width:100%; }
 </style>
 <div class='iframe'>
-<iframe style='z-index:0;' src="fetch.php?v=<?php echo $irt; ?>" frameborder="0" scrolling="no" onload="resizeIframe(this)" />
+<iframe style='z-index:0;' onmouseenter="hidecontextmenu();" src="fetch.php?v=<?php echo $irt; ?>" frameborder="0" scrolling="no" onload="resizeIframe(this)" />
 </div>
 <?php include '../../footer3.php';?>
 </div>
