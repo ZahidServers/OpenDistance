@@ -97,7 +97,7 @@ Contact Us
 </div>
 </form>
 <div class="contact100-more">
-Contact Us Using: <span class="contact100-more-highlight"><?php include '../email.txt'?></span>
+Contact Us Using: <span class="contact100-more-highlight"><?php include '../footer/Email.txt'?></span>
 </div>
 </div>
 </div>
