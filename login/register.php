@@ -232,3 +232,9 @@ Female <input type="radio" name="gender" value="female" />
  
 </body>
 </html>
+<?php
+if(isset($_GET['passmismatch']))
+{
+	echo"<script>window.alert('You Have Entered Passwords Differently please enter both password same');</script>";
+}
+?>
