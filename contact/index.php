@@ -54,7 +54,7 @@ iframe{
 	height: 800px;
 }
 </style>
-<iframe width="100%" height='100%' id='myIframe' src="Contact2.php" oncontextmenu="return showcontextmenu(event);" frameborder="0" scrolling="no" style=" position: absolute; width:100%; border: none"></iframe>
+<iframe width="100%" height='100%' id='myIframe' src="Contact2.php" onmouseenter="hidecontextmenu();" oncontextmenu="return showcontextmenu(event);" frameborder="0" scrolling="no" style=" position: absolute; width:100%; border: none"></iframe>
 <br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br>
