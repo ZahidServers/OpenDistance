@@ -203,15 +203,15 @@ Female <input type="radio" name="gender" value="female" />
 <tr>
 <td>1</td>
 <td>Class X</td>
-<td><input type="number" placeholder="enter your ssc percentage" name="ssc" maxlength="30" required/></td>
-<td><input type="number" placeholder="Enter Year of Passing(ssc)" name="yssc" maxlength="30" required/></td>
+<td><input type="number" placeholder="enter your ssc percentage" name="ssc" max='100' maxlength="30" required/></td>
+<td><input type="number" placeholder="Enter Year of Passing(ssc)" name="yssc" min='1930' maxlength="30" required/></td>
 </tr>
  
 <tr>
 <td>2</td>
 <td>Class XII</td>
-<td><input type="number" placeholder="enter your hsc percentage" name="hsc" maxlength="30" required/></td>
-<td><input type="number" placeholder="Enter Year of Passing(hsc)" name="yhsc" maxlength="30" required/></td>
+<td><input type="number" placeholder="enter your hsc percentage" name="hsc" max='100' maxlength="30" required/></td>
+<td><input type="number" placeholder="Enter Year of Passing(hsc)" name="yhsc" min='1930' maxlength="30" required/></td>
 </tr>
  
 <tr>
