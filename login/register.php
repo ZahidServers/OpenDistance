@@ -119,7 +119,7 @@ table{
 <tr>
 <td>MOBILE NUMBER</td>
 <td>
-<input type="text" name="phone" pattern="[0-9]{10,12}" placeholder="Enter your Mobile No" maxlength="10" required/>
+<input type="text" name="phone" pattern="[0-9]{10,12}" placeholder="Enter your Mobile No" minlength='10' maxlength="12" required/>
 (10 digit number)
 </td>
 </tr>
