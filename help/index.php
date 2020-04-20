@@ -72,7 +72,12 @@ mysql_select_db("studentenrollment",$con);
 $resultf=mysql_query("SELECT *FROM help WHERE id<'4'");
 while($rowf=mysql_fetch_array($resultf))
 {
-	echo "<b><a style='color:white;' href='./pages?pno=".$rowf['link']."'><h5 style='font-weight:bold;padding-left:20px;' >".$rowf['title']."<br>"."</h5></a></b>";
+	$bdsmk=$rowf['body'];
+	$vdsmk=strip_tags($bdsmk);
+	$istfdn=mb_strimwidth("$vdsmk",0,200,"...");
+	$istfdni=wordwrap($istfdn,120,"<br>\n");
+	echo "<b><a style='color:white;' href='./pages?pno=".$rowf['link']."'><h5 style='font-weight:bold;padding-left:20px;' >".wordwrap($rowf['title'],72,"<br>\n")."</h5></a></b>";
+	echo "<p style='color:white;font-size:15px;padding-left:10px;'>$istfdni</p>";
 }
 }
 if(isset($_GET['searchbar']))
@@ -113,8 +118,12 @@ if($numrows>0)
 	echo"<h6> &nbsp;You Searched For '$k'</h6>";
 while($rowfz=mysql_fetch_array($query))
 {
-	echo "
-	<b><a style='color:white;' href='./pages?pno=".$rowfz['link']."'><h5 style='font-weight:bold;padding-left:20px;' >".$rowfz['title']."<br>"."</h5></a></b>";
+	$bdsmk=$rowfz['body'];
+	$vdsmk=strip_tags($bdsmk);
+	$istfdn=mb_strimwidth("$vdsmk",0,200,"...");
+	$istfdni=wordwrap($istfdn,120,"<br>\n");
+	echo "<b><a style='color:white;' href='./pages?pno=".$rowfz['link']."'><h5 style='font-weight:bold;padding-left:20px;' >".wordwrap($rowfz['title'],72,"<br>\n")."</h5></a></b>";
+	echo "<p style='color:white;font-size:15px;padding-left:10px;'>$istfdni</p>";
 }
 }
 else{
