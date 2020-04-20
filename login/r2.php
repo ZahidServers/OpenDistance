@@ -30,6 +30,7 @@ font-size:25px;
 <?php
 $email=$_POST["email"];
 $passf=$_POST["pass"];
+$passcf=$_POST["passc"];
 $phone=$_POST["phone"];
 $gender=$_POST["gender"];
 $address=$_POST["address"];
@@ -46,6 +47,10 @@ $dob=$_POST["dob"];
 $father=$_POST["father"];
 $mother=$_POST["mother"];
 $fincome=$_POST["fincome"];
+if($passf!=$passcf)
+{
+  echo "<center><h1><br>Error Password Dont Match You Entered two different Passwords<a href='./register.php' >Go Back</a><br></h1></center>";
+}
 $local = file("../host.txt");
 $host=implode(" ",$local);
 $db = file("../unam.txt");
