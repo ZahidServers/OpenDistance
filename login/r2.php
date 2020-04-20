@@ -49,7 +49,7 @@ $mother=$_POST["mother"];
 $fincome=$_POST["fincome"];
 if($passf!=$passcf)
 {
-  echo "<center><h1><br>Error Password Dont Match You Entered two different Passwords<a href='./register.php' >Go Back</a><br></h1></center>";
+  echo "<script>window.location.href='./register.php?passmismatch=1'</script>";
 }
 $local = file("../host.txt");
 $host=implode(" ",$local);
