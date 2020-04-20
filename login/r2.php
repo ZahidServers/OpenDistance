@@ -49,7 +49,8 @@ $mother=$_POST["mother"];
 $fincome=$_POST["fincome"];
 if($passf!=$passcf)
 {
-  echo "<script>window.location.href='./register.php?passmismatch=1'</script>";
+  header("Location: ./register.php?passmismatch=1");
+die();
 }
 $local = file("../host.txt");
 $host=implode(" ",$local);
