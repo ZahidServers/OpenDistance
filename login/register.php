@@ -34,6 +34,12 @@ input[type=text] {
   margin: 8px 0;
   box-sizing: border-box;
 }
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
 input[type=date] {
   width: 100%;
   padding: 12px 20px;
@@ -97,7 +103,7 @@ table{
 <!----- Email Id ---------------------------------------------------------->
 <tr>
 <td>EMAIL ID</td>
-<td><input type="text" name="email" placeholder="Enter Your Email eg:example@example.com" maxlength="100" required/></td>
+<td><input type="email" name="email" placeholder="Enter Your Email eg:example@example.com" maxlength="100" required/></td>
 </tr>
 <!----- Password ---------------------------------------------------------->
 <tr>
