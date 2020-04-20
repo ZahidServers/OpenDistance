@@ -3,7 +3,7 @@
 if(isset($_POST['msg'])&&isset($_POST['name'])&&isset($_POST['email']))
 {
 	require '../phpmailer/PHPMailerAutoload.php';
-	$localn = file("../email.txt");
+	$localn = file("../footer/Email.txt");
 	$hostn=implode(" ",$localn);
 	$dbtf = file("../passe.txt");
 	$udbs=implode(" ",$dbtf);
