@@ -88,7 +88,7 @@ table{
 <!----- First Name ---------------------------------------------------------->
 <tr>
 <td>FULL NAME</td>
-<td><input type="text" required name="name" placeholder="Enter Full Name in format FirstName SirName eg:-Mohammed Zahid Wadiwale" maxlength="100"/>
+<td><input type="text" required name="name" pattern="[a-zA-Z0-9!@#%^*_]{6,25}" placeholder="Enter Full Name in format FirstName SirName eg:-Mohammed Zahid Wadiwale" maxlength="100"/>
 </td>
 </tr>
 
@@ -103,23 +103,23 @@ table{
 <!----- Email Id ---------------------------------------------------------->
 <tr>
 <td>EMAIL ID</td>
-<td><input type="email" name="email" placeholder="Enter Your Email eg:example@example.com" maxlength="100" required/></td>
+<td><input type="email" name="email" pattern="[a-zA-Z0-9!@#%^*_]{6,25}" placeholder="Enter Your Email eg:example@example.com" maxlength="100" required/></td>
 </tr>
 <!----- Password ---------------------------------------------------------->
 <tr>
 <td>Password</td>
-<td><input type="password" name="pass" placeholder="Enter Password that you want to keep for your new account" maxlength="100" required/></td>
+<td><input type="password" name="pass" pattern="[a-zA-Z0-9!@#%^*_]{6,25}" placeholder="Enter Password that you want to keep for your new account" maxlength="100" required/></td>
 </tr>
 <!----- Password Confirmation ---------------------------------------------------------->
 <tr>
 <td>Re-Enter Password</td>
-<td><input type="password" name="passc" placeholder="Enter Password Again" maxlength="100" required/></td>
+<td><input type="password" name="passc" pattern="[a-zA-Z0-9!@#%^*_]{6,25}" placeholder="Enter Password Again" maxlength="100" required/></td>
 </tr>
 <!----- Mobile Number ---------------------------------------------------------->
 <tr>
 <td>MOBILE NUMBER</td>
 <td>
-<input type="text" name="phone" placeholder="Enter your Mobile No" maxlength="10" required/>
+<input type="text" name="phone" pattern="[0-9]{10,12}" placeholder="Enter your Mobile No" maxlength="10" required/>
 (10 digit number)
 </td>
 </tr>
@@ -135,31 +135,31 @@ Female <input type="radio" name="gender" value="female" />
 <!----- Father Name ---------------------------------------------------------->
 <tr>
 <td>Father Name</td>
-<td><input type="text" required name="father" placeholder="Enter Fathers Name" maxlength="100"/>
+<td><input type="text" pattern="[a-zA-Z0-9!@#%^*_]{2,100}" required name="father" placeholder="Enter Fathers Name" maxlength="100"/>
 </td>
 </tr>
 <!----- Mother Name ---------------------------------------------------------->
 <tr>
 <td>Mother Name</td>
-<td><input type="text" required name="mother" placeholder="Enter Mothers Name" maxlength="100"/>
+<td><input type="text" pattern="[a-zA-Z0-9!@#%^*_]{2,100}" required name="mother" placeholder="Enter Mothers Name" maxlength="100"/>
 </td>
 </tr>
 <!----- Family Annual Income ---------------------------------------------------------->
 <tr>
 <td>Family Annual Income</td>
-<td><input type="text" required name="fincome" placeholder="Enter Family Income i.e Annual" maxlength="100"/>
+<td><input type="text" pattern="[0-9]{3,80}" required name="fincome" placeholder="Enter Family Income i.e Annual" maxlength="100"/>
 </td>
 </tr>
 <!----- Address ---------------------------------------------------------->
 <tr>
 <td>ADDRESS <br /><br /><br /></td>
-<td><textarea name="address" placeholder="Enter your address" rows="4" cols="30" required></textarea></td>
+<td><textarea name="address" pattern="[a-zA-Z0-9!@#%^*_]{6,25}" placeholder="Enter your address" rows="4" cols="30" required></textarea></td>
 </tr>
  
 <!----- City ---------------------------------------------------------->
 <tr>
 <td>CITY</td>
-<td><input type="text" name="city" required placeholder="Enter your City" maxlength="30" />
+<td><input type="text" name="city" pattern="[a-zA-Z0-9!@#%^*_]{3,25}" required placeholder="Enter your City" maxlength="30" />
 (max 30 characters a-z and A-Z)
 </td>
 </tr>
@@ -167,7 +167,7 @@ Female <input type="radio" name="gender" value="female" />
 <!----- Pin Code ---------------------------------------------------------->
 <tr>
 <td>PIN CODE</td>
-<td><input type="text" name="pcode" placeholder="Enter your Zip Code eg:400010" maxlength="6" required/>
+<td><input type="text" pattern="[0-9]{3,12}" name="pcode" placeholder="Enter your Zip Code eg:400010" maxlength="6" required/>
 (6 digit number)
 </td>
 </tr>
@@ -175,7 +175,7 @@ Female <input type="radio" name="gender" value="female" />
 <!----- State ---------------------------------------------------------->
 <tr>
 <td>STATE</td>
-<td><input type="text" name="state" placeholder="Enter your state eg:maharashtra" maxlength="30" required/>
+<td><input type="text" name="state" pattern="[a-zA-Z0-9!@#%^*_]{3,40}" placeholder="Enter your state eg:maharashtra" maxlength="30" required/>
 (max 30 characters a-z and A-Z)
 </td>
 </tr>
@@ -183,7 +183,7 @@ Female <input type="radio" name="gender" value="female" />
 <!----- Country ---------------------------------------------------------->
 <tr>
 <td>COUNTRY</td>
-<td><input type="text" name="country" placeholder="Enter your country eg:-india" required/></td>
+<td><input type="text" name="country" pattern="[a-zA-Z0-9!@#%^*_]{3,40}" placeholder="Enter your country eg:-india" required/></td>
 </tr>
  
 <!----- Qualification---------------------------------------------------------->
@@ -203,15 +203,15 @@ Female <input type="radio" name="gender" value="female" />
 <tr>
 <td>1</td>
 <td>Class X</td>
-<td><input type="text" placeholder="enter your ssc percentage" name="ssc" maxlength="30" required/></td>
-<td><input type="text" placeholder="Enter Year of Passing(ssc)" name="yssc" maxlength="30" required/></td>
+<td><input type="number" placeholder="enter your ssc percentage" name="ssc" maxlength="30" required/></td>
+<td><input type="number" placeholder="Enter Year of Passing(ssc)" name="yssc" maxlength="30" required/></td>
 </tr>
  
 <tr>
 <td>2</td>
 <td>Class XII</td>
-<td><input type="text" placeholder="enter your hsc percentage" name="hsc" maxlength="30" required/></td>
-<td><input type="text" placeholder="Enter Year of Passing(hsc)" name="yhsc" maxlength="30" required/></td>
+<td><input type="number" placeholder="enter your hsc percentage" name="hsc" maxlength="30" required/></td>
+<td><input type="number" placeholder="Enter Year of Passing(hsc)" name="yhsc" maxlength="30" required/></td>
 </tr>
  
 <tr>
